@@ -46,7 +46,7 @@ public static class TestTrack
         ProductionRemoteControlCar prc2)
     {
         //Orden ascendente de victorias, el mejor se introduce el ultimo.
-        List<ProductionRemoteControlCar> result = [];
+        /*List<ProductionRemoteControlCar> result = [];
         if(prc1.CompareTo(prc2) >=0){
             result.Add(prc2);
             result.Add(prc1);
@@ -56,7 +56,13 @@ public static class TestTrack
             result.Add(prc2);
 
         }
-
         return result;
+        */
+        List<ProductionRemoteControlCar> result = [prc1, prc2];
+        result.Sort();
+        
+        return result;
+    
+        
     }
 }
